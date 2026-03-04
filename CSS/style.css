@@ -1,0 +1,209 @@
+@charset "UtF-8";
+
+
+/* 共通部分 */
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    background-color: #f6f0cc;
+    color: #432c02;
+}
+
+img {
+    /* width: 100%; */
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 960px;
+    margin: auto;
+}
+
+.page-ti {
+    text-align: center;
+}
+
+.btn {
+    font-size: 1.5rem;
+    background-color: #ff6c94;
+    color: #ffffff;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 4px;
+}
+
+/* ヘッダー */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    gap: 1rem;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+header img {
+    width: 120px;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    color: #300;
+}
+
+/* トップ */
+
+
+.fv img {
+    width: 100%;
+}
+
+
+/* プロフィール */
+
+#profile {
+    margin-top: 4rem;
+}
+
+#profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+#profile .pr-pr {
+    display: flex;
+    gap: 2rem;
+    width: 80%;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.pr-pr p {
+    font-size: 70%;
+    line-height: 1.5;
+}
+
+.pr-sk {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#profile ul {
+    display: flex;
+    justify-content: center;
+}
+
+#profile ul img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* works */
+
+#works {
+    margin-top: 4rem;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.web {
+    display: flex;
+}
+
+.graphic {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 4rem;
+}
+
+.graphic li {
+    width: 24%;
+    border: 1px solid #432c02;
+}
+
+.graphic li img {
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+
+/* コンタクト */
+
+#contact {
+    margin-top: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* モバイル版 */
+@media (max-width: 800px) {
+
+    /* 共通部分 */
+    .wrapper {
+        width: 450px;
+        margin: auto;
+    }
+
+    .btn {
+        margin: auto;
+    }
+
+    /* ヘッダー */
+    nav ul {
+        gap: .5rem;
+    }
+
+    /* プロフィール */
+    #profile .pr-pr {
+        flex-direction: column;
+    }
+
+    .pr-pr img {
+        margin: auto;
+    }
+
+    /* works */
+    #works ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #works ul li {
+        border: none;
+    }
+}
